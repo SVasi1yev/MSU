@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf detect_cuda_* cmake_install.cmake CMakeCache.txt CMakeFiles/ Makefile test mpi_test MNIST_train
+libtorch_path=~/GenNAS/polus_code/libtorch_v1.3.1
+~/cmake/cmake-3.15.2/bin/cmake -DCMAKE_PREFIX_PATH=$libtorch_path ..
+make

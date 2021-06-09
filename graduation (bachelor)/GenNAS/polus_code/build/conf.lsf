@@ -1,0 +1,7 @@
+#BSUB -n 2 -q normal
+#BSUB -W 3:00
+#BSUB -R "span[ptile=1]"
+#BSUB -gpu "num=2:mode=exclusive_process"
+#BSUB -o out.txt
+#BSUB -e err.txt
+OMP_NUM_THREADS=2 mpiexec ./main q 16 0 0.05 0 0.5 1 2
