@@ -1,0 +1,14 @@
+traceroute: sudo traceroute -T ya.ru
+traceroute to ya.ru (87.250.250.242), 30 hops max, 60 byte packets
+ 1  192.168.1.1 (192.168.1.1)  0.938 ms  1.118 ms  1.336 ms
+ 2  fake-gw.maryno.net (81.88.208.255)  5.502 ms  5.531 ms  5.642 ms
+ 3  v223-nat13.maryno.net (188.244.0.50)  5.709 ms  5.799 ms  5.880 ms
+ 4  v224-c6509.maryno.net (188.244.0.65)  5.951 ms  6.082 ms  6.185 ms
+ 5  77.91.66.41 (77.91.66.41)  6.414 ms  6.943 ms  6.944 ms
+ 6  77.91.67.174 (77.91.67.174)  9.862 ms  5.427 ms  3.707 ms
+ 7  ya.ru (87.250.250.242)  7.021 ms  6.589 ms  6.841 ms
+
+фильтр: icmp
+
+min ttl = 62 
+max ttl = 252

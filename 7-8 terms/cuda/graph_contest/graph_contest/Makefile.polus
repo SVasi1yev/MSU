@@ -1,0 +1,57 @@
+# Computation mode
+# USE_GPU = true
+
+# Platform dependent paths
+# Lomonosov
+CXX = g++
+CUDA_DIR = /usr/local/cuda-9.1/
+CUDA_COMPILER = $(CUDA_DIR)/bin/nvcc
+
+# Include paths...
+Include_Path = -I /usr/local/cuda-9.1/include
+
+# Library paths...
+Libraries = -fopenmp
+
+Library_Path = -L $(CUDA_DIR)/lib -L $(CUDA_DIR)/lib64
+Libraries += -lcudart -lcudadevrt -lnvgraph
+
+# CPU Compiler flags...
+CXXFLAGS = -O2 -w -m64 -std=c++11 -fopenmp
+CUDAFLAGS = -O2 -Wno-deprecated-gpu-targets
+
+.DEFAULT_GOAL := all
+
+##########
+# binaries
+##########
+
+all: sssp
+
+sssp: create_folders sssp.o bellman_ford.o
+	$(CXX) object_files/sssp.o object_files/bellman_ford.o $(Library_Path) $(Libraries) $(LDFLAGS) -o ./bin/sssp
+
+create_folders:
+	-mkdir -p ./bin
+	-mkdir -p ./object_files
+
+##################
+# CPP sample files
+##################
+
+sssp.o: sssp.cpp
+	$(CXX) $(CXXFLAGS) $(Include_Path) -c sssp.cpp -o object_files/sssp.o
+
+#################
+# CUDA operations
+#################
+
+bellman_ford.o: bellman_ford.cu
+	$(CUDA_COMPILER) $(CUDAFLAGS) $(Include_Path) -arch=sm_50 -c bellman_ford.cu -o object_files/bellman_ford.o
+
+#############
+# File system
+#############
+
+clean:
+	-rm bin/sssp

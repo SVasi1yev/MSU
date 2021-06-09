@@ -1,0 +1,5 @@
+фильтр: (ip.src==216.58.211.110 || ip.dst==216.58.211.110) && tcp.port==80
+пакет с именем: №52
+
+First sequence number = 738635060
+Last sequence number = 3617711881

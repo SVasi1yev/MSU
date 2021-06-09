@@ -1,0 +1,10 @@
+iperf: iperf -p 5200 -c bouygues.iperf.fr
+------------------------------------------------------------
+Client connecting to bouygues.iperf.fr, TCP port 5200
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.1.123 port 53964 connected with 89.84.1.222 port 5200
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-10.0 sec  16384 PBytes  14756 Pbits/sec
+
+фильтр: tcp.port==5200

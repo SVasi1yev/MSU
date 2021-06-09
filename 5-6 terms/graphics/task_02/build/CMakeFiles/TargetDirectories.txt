@@ -1,0 +1,3 @@
+/home/svasilyev/projects/Other/Mash_graph/task_02/build/CMakeFiles/rebuild_cache.dir
+/home/svasilyev/projects/Other/Mash_graph/task_02/build/CMakeFiles/main.dir
+/home/svasilyev/projects/Other/Mash_graph/task_02/build/CMakeFiles/edit_cache.dir
