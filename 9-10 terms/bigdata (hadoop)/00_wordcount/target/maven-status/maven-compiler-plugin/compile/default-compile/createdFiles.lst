@@ -1,0 +1,3 @@
+WordCount.class
+WordCount$Reduce.class
+WordCount$Map.class

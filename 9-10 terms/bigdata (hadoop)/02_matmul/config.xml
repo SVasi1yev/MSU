@@ -1,0 +1,22 @@
+<configuration>
+	<property>
+		<name>mm.groups</name>
+		<value>2</value>
+		<description>Number of groups</description>
+	</property>
+	<property>
+		<name>mm.tags</name>
+		<value>ABD</value>
+		<description>Matrix names</description>
+	</property>
+	<property>
+		<name>mm.float-format</name>
+		<value>%.20f</value>
+		<description>Input float format</description>
+	</property>
+	<property>
+		<name>mapred.reduce.tasks</name>
+		<value>1</value>
+		<description>Number of reducers</description>
+	</property>
+</configuration>

@@ -1,0 +1,5 @@
+*
+!.gitignore
+!figdate/*
+!figdate/
+!figdate_wrapper.py

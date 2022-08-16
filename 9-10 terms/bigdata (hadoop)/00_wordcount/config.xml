@@ -1,0 +1,17 @@
+<configuration>
+	<property>
+		<name>candle.width</name>
+		<value>300000</value>
+		<description>Width of a candle (in milliseconds)</description>
+	</property>
+	<property>
+		<name>candle.time.to</name>
+		<value>2358</value>
+		<description>Width of a candle (in milliseconds)</description>
+	</property>
+	<property>
+		<name>candle.num.reducers</name>
+		<value>1</value>
+		<description>Reducers number</description>
+	</property>
+</configuration>

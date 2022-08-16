@@ -1,0 +1,8 @@
+Candle$Value.class
+Candle$Partition.class
+Candle$Reduce.class
+Candle.class
+Candle$Combine.class
+Candle$Map.class
+Candle$Key.class
+Candle$CandleStruct.class

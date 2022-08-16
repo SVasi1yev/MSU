@@ -1,0 +1,17 @@
+<configuration>
+	<property>
+		<name>mm.groups</name>
+		<value>1</value>
+		<description>Number of groups</description>
+	</property>
+	<property>
+		<name>mm.tags</name>
+		<value>ABC</value>
+		<description>Matrix names</description>
+	</property>
+	<property>
+		<name>mapred.reduce.tasks</name>
+		<value>1</value>
+		<description>Number of reducers</description>
+	</property>
+</configuration>
