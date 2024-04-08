@@ -1,0 +1,7 @@
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/mse
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/skelconv
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/netconv
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/fieldconv
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/delaunay_2D
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/delaunay_3D
+/home/svasilyev/disperse_v0.9.24_03/disperse_03/bin/pdview

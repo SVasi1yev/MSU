@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+3c971080cb8c7445afef7460162aadd9 src/pdview/moc_PDV_interface.cxx
+307f78f3329f20339983b8851010cc65 src/pdview/moc_PD_widget.cxx
+e4d8caa31281f692a589f1e8f2334835 src/pdview/qrc_help.cxx

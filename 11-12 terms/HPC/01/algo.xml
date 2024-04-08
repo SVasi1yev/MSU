@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<algo>
+  <params>
+    <param name = "N" type = "int" value = "3"></param>
+    <param name = "M" type = "int" value = "10"></param>
+  </params>
+  <block id="0" dims="1">
+    <arg name="i" val="2..N+1"></arg>
+    <vertex condition="" type="1">
+      <in src="i-1"></in>
+      <in src="i"></in>
+    </vertex>
+  </block>
+  <block id = "1" dims = "2">
+    <arg name = "i" val = "2..N+1"></arg>
+    <arg name = "j" val = "2..M+1"></arg>
+    <vertex condition = "" type = "1">
+      <in src = "i-2, j-1"></in>
+    </vertex>
+  </block>
+  <block id = "2" dims = "3">
+    <arg name = "i" val = "2..N+1"></arg>
+    <arg name = "j" val = "1..M+1"></arg>
+    <arg name = "k" val = "1..N"></arg>
+    <vertex condition = "(j==1) and (k==1)" type = "1">
+      <in bsrc = "1" src = "i, M+1"></in>
+      <in bsrc = "0" src = "i"></in>
+    </vertex>
+    <vertex condition = "(j>1) " type = "1">
+      <in src = "i-1, j, k-1"></in>
+      <in src = "i, j, k"></in>
+    </vertex>
+  </block>
+</algo>
